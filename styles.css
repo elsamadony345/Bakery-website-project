@@ -1,0 +1,338 @@
+/* general styling for all elements  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+} 
+
+/* navbar styling  */
+
+.small-sized-screen-logo{
+  display: none;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 11dvh;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.2em;
+  color: white;
+}
+.navigation-list a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+}
+.navigation-list a:link,
+.navigation-list a:visited {
+  color: white;
+}
+nav a img {
+  max-width: 200px;
+}
+ 
+/* hero section styling  */
+
+main {
+  color: white;
+  height: 100dvh;
+  background-image: url("drew-coffman-1872.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main a:link,
+main a:visited {
+  color: white;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  gap: 2em;
+}
+main h1 {
+  font-size: 4.2rem;
+  font-weight: 300;
+}
+main h6 {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+}
+.hero-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2em;
+}
+.btn {
+  text-decoration: none;
+  padding: 2.6%;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+/* contact us section styling  */
+
+.contact-us {
+  border: 0.2em rgb(255, 255, 255) solid;
+}
+.learn-more {
+  border: 0.2em rgb(141, 120, 82) solid;
+  background-color: rgb(141, 120, 82);
+}
+section {
+  height: 75dvh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 6%;
+  color: gray;
+}
+
+section img {
+  width: 80%;
+  height: auto;
+}
+.text-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.5em;
+  width: 80%;
+}
+.text-cont h2 {
+  font-weight: 300;
+  font-size: 3em;
+  color: black;
+}
+.text-cont p {
+  font-size: 1.25em;
+  font-weight: 300;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+.text-cont ul {
+  list-style: none;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.text-cont ul span {
+  border: solid rgb(141, 120, 82) 0.05em;
+  border-radius: 50%;
+  padding: 0.5em;
+  margin-right: 0.5em;
+}
+.text-cont ul span i {
+ color: rgb(141, 120, 82);
+}
+
+
+/* our location section styling  */
+
+.ourLocation-sect{
+ background-color: rgb(248, 248, 248);
+}
+.cards-sect{
+    height: 90dvh;
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+.cards-cont{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr) ;
+    width: 90%;
+    gap: 2em;
+}
+.card{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8em;
+}
+.cards-cont .card img{
+    width: 100% ;
+    height: auto;
+}
+.card p{
+    text-align: center;
+}
+.contactUs-sect{
+    background-color: rgb(248, 248, 248);
+}
+.contactUs-text-cont { 
+    gap: 1.5em;
+}
+.contactUs-text-cont ul li span i{
+    color: white;
+    font-weight: 200;
+}
+.contactUs-text-cont ul li span {
+    background-color: rgb(141, 120, 82) ; 
+}
+.contactUs-text-cont p { 
+    font-size: 1em;
+}
+
+
+
+/* footer styling  */
+
+
+
+
+footer section { 
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1.3fr 1fr;
+    background-color: rgb(63, 61, 57);
+}
+footer section .division { 
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    color: white;
+}
+footer section .division ul { 
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+footer section .division:nth-of-type(2) ul li::before ,
+footer section .division:nth-of-type(3) ul li::before {
+    content: '›';
+            color: #808080;
+            font-size: 1.8rem;
+            margin-right: 20px;
+            font-weight: 300;
+}
+footer section .division ul li{
+            margin-bottom:0.8em ;
+            border-bottom: 0.8px solid gray ;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+}
+footer section .division p,footer section .division span { 
+    font-size: 1.1em;
+}
+footer section .division:nth-of-type(4) span {
+    color: #808080;
+    padding: 0.7em;
+}
+footer section .division:nth-of-type(4) { 
+    background-image: url(contact-details-map.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+footer .last-sect {
+    height: 40dvh;
+    background-color: rgb(53, 51, 48);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    padding: 1.5em;
+}
+footer .last-sect img{
+
+    width: 30%;
+    height: auto;
+}
+footer .last-sect span {
+    color :gray ;
+}
+.social-media-logos-cont{
+    display: flex;
+    color: rgb(140, 138, 134) ;
+    flex-direction: row;
+    gap:1.2em;
+    font-size: 1.5em;
+} 
+
+.social-media-logos-cont i {
+   background-color: rgb(71, 69, 64);
+   border-radius: 50%;
+   width: 1.5em;
+ height: 1.5em;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+}
+.fa-facebook:hover{
+    background-color: rgb(24, 119, 242);
+}
+.fa-google-plus:hover{
+    background-color: #DD4B39;
+}
+.fa-linkedin-in:hover{
+    background-color: #0072b1;
+}
+.fa-twitter:hover{
+    background-color: #1DA1F2;
+}
+
+/* styling the navbar on scroll */
+
+.navbar-moved {
+    background-color: white;
+    color: black;
+}
+
+nav.navbar-moved a.navigation-links {
+  color: black;
+}
+
+/* media queries for responsive website */
+
+
+@media (max-width : 600px) {
+    nav { 
+      background-color: white;
+    }
+    #navbar-logo{
+      display: none;
+    }
+    .small-sized-screen-logo{
+      display: block;
+    }
+}
