@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+     <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
     <nav>
         <a href="index.html">
         <img id="navbar-logo" src="bakery-light-1.png" alt="Bakery">
         <img src="bakery-color.png" alt="Bakery" class="small-sized-screen-logo">
         </a>
-        <div class="navigation-list">
+        <div class="navigation-list" id="navMenu">
             <a class="navigation-links" href="index.html">Home</a>
             <a class="navigation-links" href="index.html">About</a>
             <a class="navigation-links" href="index.html">Our Offers</a>
@@ -19,6 +22,12 @@
             <a class="navigation-links" href="index.html">Blog</a>
             <a class="navigation-links" href="index.html">Contact</a>
         </div>
+         <!-- Hamburger Menu -->
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
     <main>
         <div class="hero-section">
