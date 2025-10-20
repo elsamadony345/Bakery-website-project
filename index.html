@@ -1,13 +1,17 @@
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakery house</title>
+    <meta name="description" content="Family Bakery - The biggest, best equipped and most advanced Bakery in the greater Los Angeles area">
+    <meta name="keywords" content="bakery, bread, cookies, bagels, Los Angeles, pastries">
+    <title>Family Bakery | Premium Baked Goods</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
      <!-- Overlay for mobile menu -->
-    <div class="overlay" id="overlay"></div>
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
 
     <nav>
         <a href="index.html">
@@ -40,18 +44,18 @@
         </div>
         </div>
     </main>
-    <section>
-        <img src="alexandru-stavrica.jpg" alt="Bread with care">
+    <section id="about" class="about-section">
+        <img src="alexandru-stavrica.jpg" alt="Freshly baked artisan bread" loading="lazy">
         <div class="text-cont">
             <h2>Who we are?</h2>
             <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small
                  residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
                 <div class="list">
                  <ul>
-                    <li><span><i class="fa-brands fa-envira"></i> </span>We care about enviroment.</li>
-                    <li><span><i class="fa-solid fa-people-group"></i></span>We are trusted by hundreds of clients.</li>
-                    <li><span><i class="fa-solid fa-heart"></i> </span>Social media loves us!</li>
-                    <li><span><i class="fa-solid fa-check"></i></span>This list is super easy to create.</li>
+                    <li><span><i class="fa-brands fa-envira" aria-hidden="true"></i> </span>We care about environment.</li>
+                    <li><span><i class="fa-solid fa-people-group" aria-hidden="true"></i></span>We are trusted by hundreds of clients.</li>
+                    <li><span><i class="fa-solid fa-heart" aria-hidden="true"></i> </span>Social media loves us!</li>
+                    <li><span><i class="fa-solid fa-check" aria-hidden="true"></i></span>This list is super easy to create.</li>
                 </ul>
             </div>
         </div>
@@ -67,14 +71,14 @@
                 We are so happy with this theme. Everyday it make our lives better.
                </p>
         </div>
-        <img src="full-2-800x640.jpg" alt="Bread with care">
+        <img src="full-2-800x640.jpg" alt="Bread with care" loading="lazy">
     </section>
     <div class="cards-sect">
         <h2>Our Baking</h2>
         <span>Learn more about them. We have worked truly hard to make them perfect for every use.</span>
         <div class="cards-cont">
             <div class="card">
-                <img src="ben-garratt.jpg" alt="a tasty garrat">
+                <img src="ben-garratt.jpg" alt="a tasty garrat" loading="lazy">
                 <h3>Superior Breads</h3>
                 <p>
                     Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero,
@@ -83,7 +87,7 @@
                 </p>
             </div>
             <div class="card">
-                <img src="stas-ovsky.jpg" alt="a tasty bagel">
+                <img src="stas-ovsky.jpg" alt="a tasty bagel" loading="lazy">
                 <h3>Bagels</h3>
                 <p>
                    Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero,
@@ -92,7 +96,7 @@
                 </p>
             </div>
             <div class="card">
-                <img src="clem-onojeghuo.jpg" alt="tasty cookies">
+                <img src="clem-onojeghuo.jpg" alt="tasty cookies" loading="lazy">
                 <h3>Cookies</h3>
                 <p>
                     Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero,
@@ -110,14 +114,14 @@
                  <span>Our contact details</span>
                 <div class="list">
                  <ul>
-                    <li><span><i class="fa-regular fa-map"></i></span>Manchester St 123-78B, Random 713, UK</li>
-                    <li><span><i class="fa-solid fa-phone"></i></span>+46 123 456 789</li>
-                    <li><span><i class="fa-solid fa-headphones"></i></span>+37 431 456 789</li>
-                    <li><span><i class="fa-regular fa-envelope"></i></span>hello@sitename.com</li>
+                    <li><span><i class="fa-regular fa-map" aria-hidden="true"></i></span>Manchester St 123-78B, Random 713, UK</li>
+                    <li><span><i class="fa-solid fa-phone" aria-hidden="true"></i></span>+46 123 456 789</li>
+                    <li><span><i class="fa-solid fa-headphones" aria-hidden="true"></i></span>+37 431 456 789</li>
+                    <li><span><i class="fa-regular fa-envelope" aria-hidden="true"></i></span>hello@sitename.com</li>
                 </ul>
             </div>
         </div>
-         <img src="location-image.png" alt="Our Location">
+         <img src="location-image.png" alt="Our Location" loading="lazy">
     </section>
     <footer>
         <section >
@@ -174,6 +178,6 @@
             </div>
     </footer>
     <script src="https://kit.fontawesome.com/c2ace2e34e.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
